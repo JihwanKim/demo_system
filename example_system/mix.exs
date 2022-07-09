@@ -39,7 +39,7 @@ defmodule ExampleSystem.Mixfile do
     [
       {:phoenix, github: "phoenixframework/phoenix", branch: "v1.4", override: true},
       {:phoenix_pubsub, "~> 1.0"},
-      {:phoenix_html, "~> 2.10"},
+      {:phoenix_html, "~> 2.10", override: true},
       {:ecto, "~> 3.0"},
       {:phoenix_ecto, "~> 4.0"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},

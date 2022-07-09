@@ -1,3 +1,8 @@
+### Clone Reason
+Erlang could not be installed in M1, so Docker execution environment was added.  
+
+Do not set the number of jobs more than 250,000 based on the allocation of 2 cores. Too many process errors.
+
 # Demo system
 
 > https://www.youtube.com/watch?v=JvBT4XBdoUE
@@ -50,4 +55,19 @@ Hot upgrade with no downtime:
 
 ```
 mix system.upgrade
+```
+
+
+## For Docker
+
+Docker Building:
+
+```
+docker build -t demo_example .
+```
+
+docker run 
+
+```
+docker run -d --name demo_example -p 4000:4000 demo_example:latest
 ```
